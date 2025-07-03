@@ -54,7 +54,7 @@
 
           for (const word of words) {
             try {
-              const res = await fetch('http://localhost:5000/check', {
+              const res = await fetch('https://japanesespellcheck.onrender.com/check', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ word })
